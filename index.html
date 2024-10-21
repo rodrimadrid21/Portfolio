@@ -11,38 +11,103 @@
     <header>
         <nav class="nav">
         <div class="header-left">
-            <a href="index.html" class="home">Inicio</a>
-            <a href="#caja" class="aboutme">Sobre mí</a>
+            <a href="index.html" class="left">Inicio</a>
+            <a href="#aboutme" class="left">Sobre mí</a>
+            <a href="#projects" class="left">Proyectos</a>
         </div>
         <div>
-            <img src="./imges/loguito-removebg-preview.png" class="logor">
+            <img src="./imges/logor.png" class="logor">
         </div>
         <div class="header-right">
-            <a href="https://www.linkedin.com/in/rodrigomadridherrera/" target="_blank" class="linkedin">LinkedIn</a>
-            <a href="https://github.com/rodrimadrid21" target="_blank" class="github">GitHub</a>
+            <a href="#education" class="right">Educación</a>
+            <a href="#tec" class="right">Tecnologías</a>
+            <a href="#contact" class="right">Contacto</a>
         </div>
         </nav>
     </header>
     <main>
+        <div class="title">
         <h1>RODRIGO MADRID</h1>
-        <h2>Estudiante de Programación</h2>
-        
-        <div class="caja" id="caja">
-            
-            <img src="./imges/cap.png" class="fachitax" alt="fotoperfil">
-        <div class="descri">
-            <h3>Sobre Mí 🧑🏽‍💻</h3>
-            <p>Hola! Soy estudiante de la Tecnicatura de Programación en la Univeridad Austral (Rosario).</p>
-            <p>Me considero una persona responsable,
-            autogestionada y con facilidad para trabajar en
-            equipo.</p>
-            <p>Busco tener mi primera experiencia como Full Stack Developer,
-            en la cual pueda poner a prueba mis conocimientos y
-            desarrollar mis habilidades.</p>
+        <h2>Software Developer</h2>
+    </div>
+        <div class="caja" id="aboutme">
+            <img src="./imges/cvimg.jpg" class="fachitax" alt="fotoperfil">
+            <div class="descri">
+                <h3 id="aboutme">Sobre Mí 🧑🏽‍💻</h3>
+                    <p>Hola! Soy estudiante de la Tecnicatura de Programación en la Univeridad Austral (Rosario).</p>
+                    <p>Me considero una persona responsable,
+                    autogestionada y con facilidad para trabajar en
+                    equipo.</p>
+                    <p>Busco tener mi primera experiencia como
+                    Full Stack Developer.</p>
+                    <div class="loguitos">
+                    <a href="https://github.com/rodrimadrid21" target="_blank">
+                        <img src=".//imges/github.png" class="github">
+                    </a>
+                    <a href="https://www.linkedin.com/in/rodrigomadridherrera/" target="_blank">
+                        <img src="./imges/linkedin.png" class="linkedin">
+                    </a>
+                    <div class="botones" id="botones"></div>
+                </div>
+                    
+
             </div>
         </div>
-        <section>
-        <h4 id="tecnologias">Tecnologías</h4>
+        
+        
+        <h3 id="projects">Proyectos</h3>
+        <div class="proyectsContainer">
+            <div class="cocheras">
+                <img src="./imges/cocheras.png" class="cocherasfoto">
+                <div class="descri">
+                <a href="https://github.com/rodrimadrid21/cocheras">
+                    <h4>App Cocheras (Back-Front)</h4>
+                </a>
+                <p>Hice una aplicación de cocheras que contiene distintas funcionalidades. Como registrarse/logearse, agregar cocheras, eliminarlas, editarlas y navegar por toda la app. Conectandola con el back-end mediante solicitudes HTTP</p>
+                <li>
+                    ANGULAR
+                    HTML5
+                    SCSS
+                    TYPESCRIPT
+                    RESTFUL APIS
+                </li>
+            </div>
+            </div>
+            <div class="vinoteca">
+                <img src="./imges/vinoteca.png" class="vinotecafoto">
+                <div class="descri">
+                <a href="https://github.com/rodrimadrid21/BodegaVinos">
+                    <h4>App Vinoteca (Back)</h4>
+                </a>
+                <p>Hice una aplicación de una vinoteca, que contiene distintas funcionalidades. Como registrar un usuario, agregar un vino, eliminarlo/s, editarlos. Conectandolo con una Base de Datos usando Entity Framework Core</p>
+                <li>
+                    .NET C# ENTITY FRAMEWORK CORE SQLITE
+                </li>
+            </div>
+            </div>
+        </div>
+        <h3 id="education">Educación</h3>
+        <div class="education">
+                <div class="fechas">
+                    <p>2024</p>
+                    <p>2023</p>
+                    <p>2023</p>
+                </div>
+                <div class="divider">-------------------</div>
+                <div class="descri">
+                    <p>Universidad Austral</p>
+                    <p>- Tecnicatura Universitaria en Programación.</p>
+                    <p>- En curso.</p>
+                    <p>Educación IT</p>
+                    <p>- Análisis y Diseño de Casos de Prueba.</p>
+                    <p>- Finalizado.</p>
+                    <p>Educación IT</p>
+                    <p>- QA Tester Manual</p>
+                    <p>- Finalizado.</p>
+                </div>
+        </div>
+        
+        <h3 id="tec">Tecnologías</h3>
         <div class="tec">
             
             <div class="tec-item">
@@ -58,12 +123,24 @@
                 <p>JavaScript</p>
             </div>
             <div class="tec-item">
+                <img src="imges/ts.jpg" alt="TypeScript">
+                <p>TypeScript</p>
+            </div>
+            <div class="tec-item">
+                <img src="imges/angular.png" alt="Angular">
+                <p>Angular</p>
+            </div>
+            <div class="tec-item">
                 <img src="./imges/python-removebg-preview.png" alt="Python">
                 <p>Python</p>
             </div>
             <div class="tec-item">
                 <img src="imges/csharp-removebg-preview.png" alt="C#">
                 <p>C#</p>
+            </div>
+            <div class="tec-item">
+                <img src="imges/net.png" alt=".Net">
+                <p>.Net</p>
             </div>
             <div class="tec-item">
                 <img src="imges/git-removebg-preview.png" alt="Git">
@@ -81,12 +158,30 @@
                 <img src="imges/mysql-removebg-preview.png" alt="mysql">
                 <p>MySQL</p>
             </div>
-                <div class="botones" id="botones">
+        </div>
+            <h3 id="contac">Contacto</h3>
+            <div class="formContainer">
+                <div class="formulario">
+                    <form action="https://formspree.io/f/xpwzwpnk" method="post">
+                        <div class="campos">
+                            <input type="text" id="name" name="name" placeholder="Nombre" required>
+                        </div>
+                        <div class="campos">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="campos">
+                            <input type="number" id="phone" name="phone" placeholder="Teléfono" required>
+                        </div>
+                        <div class="campos">
+                            <input type="text" id="message" name="message" placeholder="Mensaje" required>
+                        </div>
+                        <button type="submit" class="boton">Enviar</button>
+                    </form>
                 </div>
-        </section>
+            </div>
+        <footer>
+            © 2024 Rodrigo Madrid
+        </footer>
     </main>
-    <footer>
-        © 2024 Rodrigo Madrid
-    </footer>
 </body>
 </html>
