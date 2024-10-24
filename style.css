@@ -86,7 +86,6 @@ main{
 }
 h1 {
     text-shadow: 7px 7px 35px black;
-    margin-top: 15rem;
     font-size: 90px;
     color:rgb(240, 240, 240);
     font-family:monospace;
@@ -96,7 +95,6 @@ h2 {
     text-shadow: 10px 10px 30px black;
     font-size: 35px;
     margin-top: 0;
-    margin-bottom: 16rem;
     color: rgb(38, 186, 102);
     font-family:monospace;
     margin-left: 5rem;
@@ -122,7 +120,6 @@ h4 {
     align-items: center;
     justify-content:space-around;
     gap: 40px;
-    margin-top: 0;
 }
 
 .fachitax {
@@ -216,15 +213,15 @@ p {
     color: rgb(222, 222, 222);
     font-family: monospace;
 }
+
 .education {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;/* Asegura que todos los elementos tengan la misma altura */
     gap: 20px;
     max-width: 800px;
     margin: 0 auto; /*Centrar el contenedor en la página*/
 }
-
 .fechas {
     display: flex;
     flex-direction: column;
@@ -238,7 +235,7 @@ p {
     width: 2px;
     background-color: rgb(29, 165, 77);
     height: auto;
-    margin: 10px 10px;
+    margin: 0 10px;
 }
 .descri {
     display: flex;
