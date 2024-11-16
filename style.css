@@ -1,8 +1,12 @@
-body{
-    background-color: rgb(18, 19, 19);
+* {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+
+body{
+    background-color: rgb(18, 19, 19);
 }
 html {
     scroll-behavior: smooth;
@@ -10,6 +14,7 @@ html {
 
 header {
     position: fixed;
+    z-index: 1000;
     padding-top: 25px;
     width: 100%;
     backdrop-filter: blur(10px); /*desenfoque */
@@ -23,7 +28,7 @@ header {
 }
 .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: auto;
     background-color: rgba(10, 10, 10, 0.918);
     width: 70rem;
@@ -32,48 +37,50 @@ header {
     box-shadow: 6px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.header-left{
+.header-left, .header-right {
     display: flex;
     gap: 2rem;
-    margin-top: 3px;
-    font-size: 19px;
-    background-color: transparent;
-}
-.left {
-    font-weight: bold;
-    color: rgb(52, 177, 115);
-    font-family:monospace;
-    text-decoration: none;
-}
-.left:hover {
-    color: rgb(31, 113, 72);
-    transition: color 200ms;
+    padding-top: 0.5rem;
 }
 
-
-.header-right{
-    display: flex;
-    gap: 2rem;
-    margin-top: 3px;
-    font-size: 19px;
-    background-color: transparent;
-}
-.right {
-    font-weight: bold;
-    color: rgb(52, 177, 115);
-    font-family:monospace;
+.left, .right {
+    color: #00ff9d;
     text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
 }
-.right:hover {
-    color: rgb(31, 113, 72);
-    transition: color 200ms;
+
+.left:hover, .right:hover {
+    color: #ffffff;
+}
+
+.left::after, .right::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #00ff9d;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.left:hover::after, .right:hover::after {
+    transform: scaleX(1);
+}
+
+.logor {
+    height: 40px;
+    margin: 0 2rem;
 }
 
 main{
     display: flex;
     justify-content: flex-start;/*alinea hacia la izquierda*/
     flex-direction: column;/*en columna */
-    width: 60rem;
+    width: 70rem;
     margin: auto;
     padding: 10px 45px;
 }
@@ -125,14 +132,12 @@ h4 {
 .fachitax {
     height: auto;
     width: 270px;
-    background-size: cover;
-    border-radius: 70px;
-    box-shadow: 5px 5px 15px 5px rgb(27, 27, 27);
-    
+    border-radius: 20%;
+    box-shadow: 0 0 20px rgba(7, 22, 16, 0.3);
 }
+
 .descri {
-    margin-top: 0;
-    width: 38rem;
+    width: 42rem;
 }
 #aboutme {
     margin-top: 0;
@@ -140,16 +145,19 @@ h4 {
 }
 .loguitos {
     display: flex;
-    flex-direction: row;
-    gap:30px;
-    .linkedin {
-        width: 45px;
-        height: 45px;
-    }
-    .github {
-        width: 45px;
-        height: 41px;
-    }
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.github, .linkedin {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+.github:hover, .linkedin:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px rgba(0, 255, 157, 0.7));
 }
 a{
     text-decoration:underline;
@@ -165,8 +173,8 @@ a:hover {
 button{
     border: none;
     margin: 0;
-    font-size: 35px;
-    height: 45px;
+    font-size: 30px;
+    height: 40px;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding: 0 6px;
@@ -174,23 +182,24 @@ button{
     color:white;
     border-radius: 12px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 button:hover {
     font-weight: 550;
-    transition: 150ms;
-    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 7px 2px rgba(0, 255, 157, 0.7); /* Mayor desenfoque */
+    transform: scale(1.1);
 }
 .proyectsContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 4rem;
 }
 .cocheras, .vinoteca {
     display: flex;
     flex-direction: row;
-    padding: 30px;
-    gap: 50px;
+    padding: 2rem;
+    gap: 3rem;
     border: 2px solid black;
     border-radius: 20px;
     max-width: 70rem;
@@ -198,8 +207,13 @@ button:hover {
     font-weight: lighter;
     background-color: rgba(10, 10, 10, 0.918);
     box-shadow: 6px 8px 20px rgba(0, 0, 0, 0.3);
+    
 }
-
+.cocheras:hover, .vinoteca:hover {
+    transition: transform 0.3s ease;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 157, 0.2);
+}
 .cocherasfoto, .vinotecafoto {
     margin: auto;
     width: 20rem;
@@ -207,42 +221,65 @@ button:hover {
     border-radius: 20px;
 }
 
-p {
-    margin-top: 0;
+p, li {
+    margin-top: 1rem;
     font-size: 18px;
     color: rgb(222, 222, 222);
     font-family: monospace;
 }
 
 .education {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;/* Asegura que todos los elementos tengan la misma altura */
-    gap: 20px;
     max-width: 800px;
-    margin: 0 auto; /*Centrar el contenedor en la página*/
+    margin: auto;
+    padding: 0 1rem;
 }
-.fechas {
+
+.education-item {
     display: flex;
-    flex-direction: column;
-    font-family: monospace;
-    gap:5rem;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.education-item:nth-child(1) { animation-delay: 0.1s; }
+.education-item:nth-child(2) { animation-delay: 0.3s; }
+.education-item:nth-child(3) { animation-delay: 0.5s; }
+
+.fecha {
+    flex: 0 0 80px;
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    color: #00ff9d;
     text-align: right;
+    padding-top: 0.25rem;
+    margin-right: 1.5rem;
 }
+
 .divider {
-    width: 2px;
-    background-color: rgb(29, 165, 77);
-    height: auto;
-    margin: 0 10px;
+    flex: 0 0 2px;
+    background-color: #00ff9d;
+    margin-right: 1.5rem;
+    position: relative;
 }
-.descri {
-    display: flex;
-    flex-direction: column;
-    font-family: monospace;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: #00ff9d;
+    border-radius: 50%;
 }
 
 .tec {
@@ -305,12 +342,12 @@ footer{
 }
 
 .campos input{
-    width: 35rem;
+    width: 30rem;
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid rgb(85, 85, 85);
     border-radius: 5px;
-    background-color: rgb(47, 46, 46);
+    background-color: #1a1a1a;
     color: white;
     font-family: monospace;
     font-size: 16px;
