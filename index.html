@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="index.js" defer></script>
+    <script src="index.js" defer></script><link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
+    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
     <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="./imges/logor.png">
 </head>
 <body>
     <header>
         <nav class="nav">
         <div class="header-left">
-            <a href="index.html" class="left">Inicio</a>
-            <a href="#caja" class="left">Sobre mí</a>
+            <a href="#title" class="left">Inicio</a>
+            <a href="#aboutme" class="left">Sobre mí</a>
             <a href="#projects" class="left">Proyectos</a>
         </div>
         <div>
-            <img src="./imges/logor.png" class="logor">
+            <a href="index.html"><img src="./imges/logor.png" class="logor"></a>
         </div>
         <div class="header-right">
             <a href="#education" class="right">Educación</a>
@@ -26,15 +28,16 @@
         </nav>
     </header>
     <main>
-        <div class="title">
+        <div id="title" class="title">
         <h1>RODRIGO MADRID</h1>
         <h2>Full Stack Web Developer</h2>
     </div>
+    <h3 id="aboutme">Sobre mí</h3>
         <div class="caja" id="caja">
             <img src="./imges/cvimg.jpg" class="fachitax" alt="fotoperfil">
             <div class="descri">
-                <h3 id="aboutme">Sobre Mí 🧑🏽‍💻</h3>
-                    <p>Hola! Soy estudiante de la Tecnicatura en Programación en la Universidad Austral (Rosario).</p>
+                    <p id="saludo">¡Hola! 👋🏽</p>
+                    <p>Soy estudiante de la Tecnicatura de Programación en la Universidad Austral (Rosario).</p>
                     <p>También tengo conocimientos como QA Tester, con experiencia en aseguramiento de calidad de software.</p>
                     <p>Busco tener mi primera experiencia como
                     Full Stack Web Developer.</p>
@@ -47,8 +50,6 @@
                     </a>
                     <div class="botones" id="botones"></div>
                 </div>
-                    
-
             </div>
         </div>
         
@@ -61,13 +62,9 @@
                 <a href="https://github.com/rodrimadrid21/cocheras">
                     <h4>App Cocheras (Back-Front)</h4>
                 </a>
-                <p>Hice una aplicación de cocheras con Angular que contiene distintas funcionalidades. Como registrarse/logearse, agregar cocheras, eliminarlas, editarlas y navegar por toda la app. Conectandola con el back-end mediante solicitudes HTTP.</p>
+                <p>Desarrollé una aplicación de gestión de cocheras con Angular, que permite a los usuarios registrarse, iniciar sesión, agregar, editar y eliminar cocheras, además de gestionar reportes de ingresos y modificar tarifas. La aplicación está conectada al back-end mediante solicitudes HTTP y utiliza SQLite como base de datos para el almacenamiento de datos.</p>
                 <li>
-                    ANGULAR
-                    HTML5
-                    SCSS
-                    TYPESCRIPT
-                    RESTFUL APIS
+                    ANGULAR - TYPESCRIPT - RESTFUL APIS - .NET - C# - ENTITY FRAMEWORK CORE - JWT - SQLITE
                 </li>
             </div>
             </div>
@@ -77,9 +74,9 @@
                 <a href="https://github.com/rodrimadrid21/BodegaVinos">
                     <h4>App Vinoteca (Back)</h4>
                 </a>
-                <p>Hice una aplicación de una vinoteca, que contiene distintas funcionalidades. Como registrar un usuario, agregar un vino, eliminarlo/s, editarlos. Conectandolo con una Base de Datos usando Entity Framework Core.</p>
+                <p>Hice una aplicación para la gestión de una vinoteca,  con funcionalidades que incluyen el registro de usuarios, la adición, edición y eliminación de vinos. La aplicación está conectada a una base de datos mediante Entity Framework Core, lo que garantiza un manejo eficiente y seguro de la información.</p>
                 <li>
-                    .NET C# ENTITY FRAMEWORK CORE SQLITE
+                    .NET - C# - ENTITY FRAMEWORK CORE - SQLITE
                 </li>
             </div>
             </div>
@@ -185,7 +182,7 @@
                         <div class="campos">
                             <input type="text" id="message" name="message" placeholder="Mensaje" required>
                         </div>
-                        <button type="submit" class="boton">Enviar</button>
+                        <button type="submit" class="boton" onclick="hecho()">Enviar</button>
                     </form>
                 </div>
             </div>

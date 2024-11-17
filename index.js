@@ -13,5 +13,23 @@ function botones(nombre, id, link) {
     return boton;
 }
 
+function hecho(){
+    const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        }
+      });
+      Toast.fire({
+        icon: "success",
+        title: "Signed in successfully"
+      });
+}
+
 const botonCV = botones("cv", "boton1", "https://drive.google.com/file/d/1ppJRVQDpsdkHBoHHBpNuELwStXDxfGj7/view");
 document.getElementById("botones").appendChild(botonCV);//pone el boton en id"botones"
