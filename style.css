@@ -43,7 +43,7 @@ header {
 }
 
 .left, .right {
-    color: #00ff9d;
+    color: rgb(61, 201, 122);
     text-decoration: none;
     font-size: 1rem;
     transition: all 0.3s ease;
@@ -99,28 +99,27 @@ h1 {
     margin-left: 5rem;
 }
 h2 {
-    view-timeline: --scroll;/*es experimental por eso se ve asi*/
     text-shadow: 10px 10px 30px black;
     font-size: 35px;
-    margin-top: 2rem;
-    color: rgb(38, 186, 102);
+    padding-top: 2rem;
+    color: rgb(27, 204, 104);
     font-family:monospace;
     margin-left: 5rem;
 }
 h3{
     text-shadow: 5px 5px 30px black;
     font-size: 30px;
-    color: rgb(38, 186, 102);
+    color: rgb(33, 202, 106);
     font-family:monospace;
-    margin-bottom: 6rem;
-    margin-top: 100px;
+    margin-bottom: 4rem;
+    padding-top: 6rem;
     text-decoration: underline;
 }
 h4 {
     margin-top: 0;
     text-shadow: 5px 5px 30px black;
     font-size: 21px;
-    color: rgb(32, 150, 83);
+    color: rgb(41, 184, 103);
     font-family: monospace;
 }
 .caja {
@@ -131,7 +130,7 @@ h4 {
 }
 
 .fachitax {
-    height: 270px;
+    height: 275px;
     width: 270px;
     border-radius: 20%;
     box-shadow: 0 0 20px rgba(7, 22, 16, 0.3);
@@ -180,10 +179,10 @@ button{
     height: 40px;
     font-family: monospace;
     font-weight: bold;
-    padding: 0 6px;
+    padding: 0 5px;
     background-color: rgb(0, 0, 0);
     color:white;
-    border-radius: 12px;
+    border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -223,7 +222,9 @@ button:hover {
     height: 150px;
     border-radius: 20px;
 }
-
+a h4:hover {
+    color: rgb(19, 209, 98);
+}
 p, li {
     margin-top: 1rem;
     font-size: 18px;
@@ -336,6 +337,7 @@ footer{
     width: 45rem;
     font-family: monospace;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 0rem;
     margin-bottom: 6rem;
 }
 
