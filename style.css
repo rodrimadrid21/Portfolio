@@ -25,11 +25,11 @@ header {
         }
 }
 .nav {
-    border: 1px solid rgba(0, 0, 0, 0.445);
+    border: 1px solid rgba(82, 82, 82, 0.108);
     display: flex;
     justify-content: space-around;
     margin: auto;
-    background-color: rgba(10, 10, 10, 0.918);
+    background-color: rgba(11, 11, 11, 0.764);
     width: 70rem;
     padding: 10px 45px;
     border-radius: 40px;
@@ -197,40 +197,52 @@ button:hover {
     align-items: center;
     gap: 4rem;
 }
-.cocheras, .vinoteca {
-    display: flex;
-    flex-direction: row;
-    padding: 2rem;
-    gap: 3rem;
-    border: 1px solid rgb(0, 255, 157, 0.2);
-    border-radius: 20px;
-    max-width: 64rem;
-    box-sizing: border-box;  /*Asegura que el tamaño incluya los bordes y padding*/
-    font-weight: lighter;
-    background-color: rgba(10, 10, 10, 0.918);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    
-}
-.cocheras:hover, .vinoteca:hover {
-    transition: transform 0.3s ease;
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(2, 3, 3, 0.705);
-}
+
+.cocheras, .vinoteca { 
+    display: flex; 
+    flex-direction: row; 
+    padding: 1.5rem; 
+    gap: 2rem; 
+    border: 1px solid rgba(0, 255, 157, 0.2); 
+    border-radius: 20px; 
+    max-width: 64rem; 
+    width: 100%; 
+    box-sizing: border-box; 
+    font-weight: lighter; 
+    background-color: rgba(10, 10, 10, 0.95); 
+    box-shadow: 0 8px 16px rgba(16, 16, 16, 0.688); 
+    transition: all 0.3s ease;
+
+ } .cocheras:hover, .vinoteca:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 12px 24px rgba(12, 12, 12, 0.689);
+ }
+ 
 .cocherasfoto, .vinotecafoto {
     margin: auto;
+    margin-left: 0.4rem;
     width: 20rem;
-    height: 150px;
+    height: 10rem;
     border-radius: 20px;
+
 }
 a h4:hover {
     color: rgb(22, 231, 109);
 }
-p, li {
-    margin-top: 1rem;
-    font-size: 18px;
-    color: rgb(222, 222, 222);
-    font-family: monospace;
-}
+p, li {     
+    margin-top: 1rem;        
+    font-size: 1rem;     
+    color: rgb(222, 222, 222);     
+    font-family: monospace;     
+    line-height: 1.6;   
+}      
+li {     
+    list-style-type: none;
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 255, 157, 0.1);
+    border-radius: 8px;
+    font-size: 0.9rem;
+   }
 
 .education {
     max-width: 800px;
@@ -295,7 +307,12 @@ p, li {
     margin-top: 35px;
     flex-wrap: wrap;
 }
-
+.tec-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
 .tec-item img {
     width: 60px;
     height: 60px;
@@ -303,7 +320,8 @@ p, li {
 }
 
 .tec-item p {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-top: 5px;
     font-size: 14px;
     color: white;
@@ -324,6 +342,7 @@ footer{
     display: flex;
     justify-content: center;
 }
+
 .formulario {
     padding: 50px;
     display: flex;
@@ -339,6 +358,11 @@ footer{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-top: 0rem;
     margin-bottom: 6rem;
+    transition: all 0.3s ease;
+    
+}
+.formulario:hover{
+    transform: translateY(-5px); 
 }
 
 .formulario h2 {
