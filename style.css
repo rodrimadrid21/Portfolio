@@ -151,14 +151,16 @@ h5 {
     margin-top: 0;
     margin-bottom: 4.5rem;
 }
-
+#projects {
+    margin-top: 0.8rem;
+}
 #saludo {
     font-size: 1.5rem;
 }
 .loguitos {
     display: flex;
     justify-content: flex-start;
-    gap: 1rem;
+    gap: 1.3rem;
     margin-top: 1.3rem;
 }
 
@@ -265,7 +267,7 @@ li {
     max-width: 800px;
     margin: auto;
     padding: 0 1rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .education-item {
@@ -322,7 +324,7 @@ li {
     margin: auto;
     width: 80%;
     gap: 50px;
-    margin-top: 4rem;
+    margin-top: 2.5rem;
     flex-wrap: wrap;
 }
 .tec-item {
@@ -374,8 +376,8 @@ footer{
     width: 40rem;
     font-family: monospace;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-top: 0rem;
-    margin-bottom: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
     transition: all 0.3s ease;
     
 }
