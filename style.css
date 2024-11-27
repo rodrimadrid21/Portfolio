@@ -31,7 +31,7 @@ header {
     margin: auto;
     background-color: rgba(11, 11, 11, 0.764);
     width: 70rem;
-    padding: 10px 45px;
+    padding: 7px 45px;
     border-radius: 40px;
     
 }
@@ -89,26 +89,26 @@ main{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 }
 h1 {
     text-shadow: 7px 7px 35px black;
-    font-size: 90px;
+    font-size: 6.3rem;
     color:rgb(240, 240, 240);
     font-family:monospace;
     margin-left: 5rem;
 }
 h2 {
     text-shadow: 10px 10px 30px black;
-    font-size: 35px;
-    padding-top: 2rem;
+    font-size: 2.5rem;
+    padding-top: 1.3rem;
     color: rgb(33, 202, 106);
     font-family:monospace;
     margin-left: 5rem;
 }
 h3{
     text-shadow: 5px 5px 30px black;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: rgba(33, 202, 106, 0.963);
     font-family:monospace;
     margin-bottom: 4rem;
@@ -118,14 +118,14 @@ h3{
 h4 {
     margin-top: 0;
     text-shadow: 5px 5px 30px black;
-    font-size: 21px;
+    font-size: 1.2rem;
     color: rgba(41, 184, 103, 0.974);
     font-family: monospace;
 }
 h5 {
-    margin-top: 5px;
+    margin-top: 0.5rem;
     text-shadow: 5px 5px 30px black;
-    font-size: 18px;
+    font-size: 1.1rem;
     color: rgba(80, 80, 80, 0.974);
     font-family: monospace;
 }
@@ -149,15 +149,17 @@ h5 {
 }
 #aboutme {
     margin-top: 0;
+    margin-bottom: 4.5rem;
 }
+
 #saludo {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 .loguitos {
     display: flex;
     justify-content: flex-start;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1.3rem;
 }
 
 .github, .linkedin {
@@ -198,11 +200,12 @@ button:hover {
     font-weight: 550;
     box-shadow: 0 0 7px 2px rgba(0, 255, 157, 0.356); /* Mayor desenfoque */
 }
+
 .proyectsContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4rem;
+    gap: 3.5rem;
 }
 
 .cocheras, .vinoteca, .conversor { 
@@ -236,25 +239,33 @@ button:hover {
 a h4:hover {
     color: rgb(22, 231, 109);
 }
-p, li {     
-    margin-top: 1rem;        
+p {     
+    margin-top: 0.5rem;        
     font-size: 1rem;     
     color: rgb(222, 222, 222);     
     font-family: monospace;     
-    line-height: 1.6;   
+    line-height: 1.5;   
+}
+.proyectsContainer p {
+    font-size: 0.9rem;
+    margin-top: 0.5rem; 
 }      
 li {     
     list-style-type: none;
+    margin-top: 1rem;
     padding: 0.5rem 1rem;
+    color: rgb(222, 222, 222); 
     background-color: rgba(0, 255, 157, 0.1);
     border-radius: 8px;
-    font-size: 0.9rem;
+    font-family: monospace;
+    font-size: 0.8rem;
    }
 
 .education {
     max-width: 800px;
     margin: auto;
     padding: 0 1rem;
+    margin-top: 1.5rem;
 }
 
 .education-item {
@@ -309,9 +320,9 @@ li {
     display: flex; /*alinear las imágenes en una línea */
     justify-content: center;
     margin: auto;
-    width: 90%;
+    width: 80%;
     gap: 50px;
-    margin-top: 35px;
+    margin-top: 4rem;
     flex-wrap: wrap;
 }
 .tec-item {
@@ -321,8 +332,8 @@ li {
     gap: 5px;
 }
 .tec-item img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 5px;
 }
 
@@ -351,7 +362,7 @@ footer{
 }
 
 .formulario {
-    padding: 50px;
+    padding: 40px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -360,7 +371,7 @@ footer{
     box-shadow: 6px 8px 20px rgba(0, 0, 0, 0.3);
     border: 1px solid rgb(0, 255, 157, 0.2);
     border-radius: 10px;
-    width: 45rem;
+    width: 40rem;
     font-family: monospace;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-top: 0rem;
@@ -383,15 +394,15 @@ footer{
     margin-bottom: 2rem;
 }
 .campos input{
-    width: 36rem;
-    padding: 8px;
+    width: 32rem;
+    padding: 5px;
     margin-bottom: 15px;
     border: 1px solid rgb(85, 85, 85);
     border-radius: 5px;
     background-color: #1a1a1a;
     color: white;
     font-family: monospace;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .campos input:focus{/*cuando se selecciona*/
@@ -401,7 +412,7 @@ footer{
 
 .boton{
     width: 100%;
-    padding: 5px 15px;
+    padding: 2px 15px;
     background-color: rgb(38, 186, 85);
     border: none;
     border-radius: 5px;
@@ -409,7 +420,7 @@ footer{
     font-size: 18px;
     cursor: pointer;
     font-family: monospace;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .boton:hover {
