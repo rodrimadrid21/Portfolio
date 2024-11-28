@@ -6,11 +6,11 @@
 
 body{
     background-color: rgb(13, 14, 14);
-    width: 100%;
+    /*width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; -----Cuando lo haga responsive*/
 }
 html {
     scroll-behavior: smooth;
@@ -85,13 +85,9 @@ main{
     display: flex;
     justify-content: flex-start;/*alinea hacia la izquierda*/
     flex-direction: column;/*en columna */
-    width: 75rem;
-    max-width: 1200px; /* Limitar ancho máximo */
-    margin: 2rem auto; /* Centrar en el viewport*/
-    padding: 2rem 1rem; /* Agrega padding interno
-    /*75%
-    max-width: 1200px; /* Limitar ancho máximo 
-    margin: 2rem auto; /* Centrar en el viewport 
+    width: 75rem;/*75%
+    max-width: 1200px; /* Limitar ancho máximo*/
+    margin: 2rem auto; /* Centrar en el viewport */
     padding: 2rem 1rem; /* Agrega padding interno */
 }
 .title {
