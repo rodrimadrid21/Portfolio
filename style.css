@@ -7,6 +7,10 @@
 body{
     background-color: rgb(13, 14, 14);
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 html {
     scroll-behavior: smooth;
@@ -82,8 +86,9 @@ main{
     justify-content: flex-start;/*alinea hacia la izquierda*/
     flex-direction: column;/*en columna */
     width: 75%;
-    margin: auto;
-    padding: 10px 45px;
+    max-width: 1200px; /* Limitar ancho máximo */
+    margin: 2rem auto; /* Centrar en el viewport */
+    padding: 2rem 1rem; /* Agrega padding interno */
 }
 .title {
     display: flex;
