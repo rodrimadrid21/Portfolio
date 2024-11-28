@@ -85,9 +85,13 @@ main{
     display: flex;
     justify-content: flex-start;/*alinea hacia la izquierda*/
     flex-direction: column;/*en columna */
-    width: 75%;
+    width: 75rem;
     max-width: 1200px; /* Limitar ancho máximo */
-    margin: 2rem auto; /* Centrar en el viewport */
+    margin: 2rem auto; /* Centrar en el viewport*/
+    padding: 2rem 1rem; /* Agrega padding interno
+    /*75%
+    max-width: 1200px; /* Limitar ancho máximo 
+    margin: 2rem auto; /* Centrar en el viewport 
     padding: 2rem 1rem; /* Agrega padding interno */
 }
 .title {
