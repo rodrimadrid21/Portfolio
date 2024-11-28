@@ -85,10 +85,10 @@ main{
     display: flex;
     justify-content: flex-start;/*alinea hacia la izquierda*/
     flex-direction: column;/*en columna */
-    width: 75rem;/*75%
+    width: 70rem;/*75%
     max-width: 1200px; /* Limitar ancho máximo*/
-    margin: 2rem auto; /* Centrar en el viewport */
-    padding: 2rem 1rem; /* Agrega padding interno */
+    margin: auto;
+    padding: 2rem;
 }
 .title {
     display: flex;
@@ -120,6 +120,7 @@ h3{
     margin-bottom: 4rem;
     padding-top: 6rem;
     text-decoration: underline;
+    margin-left: 1.5rem;
 }
 h4 {
     margin-top: 0;
