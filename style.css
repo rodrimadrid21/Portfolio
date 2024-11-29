@@ -15,6 +15,27 @@ body{
 html {
     scroll-behavior: smooth;
 }
+/* Personaliza la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 18px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Personaliza el fondo de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background: #202020; /* Color de fondo de la pista */
+}
+
+/* Personaliza el "thumb" (la parte que se mueve) de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background: #696969; /* Color del thumb */
+  border-radius: 6px; /* Bordes redondeados */
+}
+
+/* Cambiar el color del thumb al pasar el mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: #969696; /* Color cuando el mouse está encima */
+}
+
 header {
     position: fixed;
     z-index: 1000;
@@ -89,6 +110,7 @@ main{
     max-width: 1200px; /* Limitar ancho máximo*/
     margin: auto;
     padding: 2rem;
+    padding-bottom: 1rem;
 }
 .title {
     display: flex;
@@ -118,7 +140,7 @@ h3{
     color: rgba(33, 202, 106, 0.963);
     font-family:monospace;
     margin-bottom: 4rem;
-    padding-top: 6rem;
+    padding-top: 5.3rem;
     text-decoration: underline;
     display: flex;
     justify-content: flex-start;
@@ -344,13 +366,7 @@ li {
     text-shadow: 9px 9px 30px black;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    margin-bottom: auto;
-    color: gray;
-    font-family: monospace;
-}
+
 /*-----------------------------------------------------------------------------------------*/
 .formContainer {
     width: 100%;
@@ -371,7 +387,6 @@ footer{
     width: 40rem;
     font-family: monospace;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-top: 1rem;
     margin-bottom: 5rem;
     transition: all 0.3s ease;
     
@@ -424,4 +439,10 @@ footer{
     background-color: rgb(20, 189, 70);
     transition: 150ms;
     transform: scale(1);
+}
+footer{
+    display: flex;
+    justify-content: center;
+    color: gray;
+    font-family: monospace;
 }
