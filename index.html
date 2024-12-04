@@ -54,7 +54,7 @@
         
         <h3 id="projects">Proyectos</h3>
         <div class="proyectsContainer">
-            <div class="conversor">
+            <div id="conversor">
                 <img src="./imges/conversor.png" class="conversorfoto">
                 <div class="descri">
                     <a class="links" href="https://github.com/rodrimadrid21/Conversor-Back" target="_blank">
@@ -66,7 +66,7 @@
                 </li>
                 </div>
             </div>
-            <div class="cocheras">
+            <div id="cocheras">
                 <img src="./imges/cocheras.png" class="cocherasfoto">
                 <div class="descri">
                 <a class="links" href="https://github.com/rodrimadrid21/cocheras" target="_blank">
@@ -78,19 +78,38 @@
                 </li>
             </div>
             </div>
-            <div class="vinoteca">
+            
+            <div class="hidden">
+                <div id="vinoteca">
                 <img src="./imges/vinoteca.png" class="vinotecafoto">
                 <div class="descri">
-                <a class="links" href="https://github.com/rodrimadrid21/BodegaVinos" target="_blank">
-                    <h4>App Vinoteca (Back)</h4>
-                </a>
-                <p>Hice una aplicación para la gestión de una vinoteca, con funcionalidades que incluyen el registro de usuarios, también permite agregar, editar y eliminar vinos por selección. La aplicación está conectada a una base de datos mediante EF Core, lo que la hace eficiente y segura.</p>
-                <li>
-                    .NET - C# - ENTITY FRAMEWORK CORE - SQLITE
-                </li>
+                    <a class="links" href="https://github.com/rodrimadrid21/BodegaVinos" target="_blank">
+                        <h4>App Vinoteca (Back)</h4>
+                    </a>
+                    <p>Hice una aplicación para la gestión de una vinoteca, con funcionalidades que incluyen el registro de usuarios, también permite agregar, editar y eliminar vinos por selección. La aplicación está conectada a una base de datos mediante EF Core, lo que la hace eficiente y segura.</p>
+                    <li>.NET - C# - ENTITY FRAMEWORK CORE - SQLITE</li>
+                </div>
             </div>
             </div>
+            
+            <div class="hidden">
+                <div id="contacts">
+                <img src="./imges/AgendaContactosPython.png" class="contactsfoto">
+                <div class="descri">
+                    <a class="links" href="https://github.com/rodrimadrid21/BodegaVinos" target="_blank">
+                        <h4>Agenda Contactos</h4>
+                    </a>
+                    <p>Contribuí a este software como trabajo final de la facultad, utilizando Python como lenguaje de programación y aplicando el patrón MVC. Implementé la funcionalidad que permite a los usuarios darse de baja una vez que están logueados con sus credenciales.</p>
+                    <li>PYTHON - MVC</li>
+                </div>
+                </div>
+            </div>
+
+            <!-- Botón para mostrar más proyectos -->
+        <button id="toggleProjectsBtn">Ver más</button>
         </div>
+        
+        
 
         <h3 id="education">Educación</h3>
             <div class="education">

@@ -12,6 +12,7 @@ body{
     flex-direction: column;
     align-items: center; -----Cuando lo haga responsive*/
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -238,10 +239,10 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3.5rem;
+    gap: 2.2rem;
 }
 
-.cocheras, .vinoteca, .conversor { 
+#cocheras, #vinoteca, #conversor, #contacts { 
     display: flex; 
     flex-direction: row; 
     padding: 1.5rem; 
@@ -256,12 +257,12 @@ button:hover {
     box-shadow: 0 8px 16px rgba(16, 16, 16, 0.688); 
     transition: all 0.3s ease;
 
- } .cocheras:hover, .vinoteca:hover, .conversor:hover { 
+ } #cocheras:hover, #vinoteca:hover, #conversor:hover, #contacts:hover { 
     transform: translateY(-5px); 
     box-shadow: 0 12px 24px rgba(12, 12, 12, 0.689);
  }
  
-.cocherasfoto, .vinotecafoto, .conversorfoto {
+.cocherasfoto, .vinotecafoto, .conversorfoto, .contactsfoto {
     margin: auto;
     margin-left: 0.4rem;
     width: 20rem;
@@ -282,7 +283,35 @@ p {
 .proyectsContainer p {
     font-size: 0.9rem;
     margin-top: 0.5rem; 
-}      
+}  
+/* Estilo para el botón */
+#toggleProjectsBtn {
+    margin-bottom: 2rem;
+    color: rgb(25, 175, 90);
+    background-color: transparent;
+    font-family: monospace;
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+#toggleProjectsBtn:hover {
+    transform: scale(1.06);
+    box-shadow: none;
+    color: #07e274ef;
+    text-decoration: underline;
+}
+
+/* Transición suave para los proyectos */
+.proyectsContainer > div {
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out, margin 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.hidden {
+    pointer-events: none; /* Desactiva interacciones mientras está oculto */
+}
+
 li {     
     list-style-type: none;
     margin-top: 1rem;
